@@ -14,12 +14,12 @@ tags: [Bandit]
 ## 풀이
 `cd inhere` 명령으로 `inhere` 디렉토리로 이동한다.
 ```shell
-bandit3@bandit:~$ cd inhere
+bandit4@bandit:~$ cd inhere
 ```  
 
 &nbsp;  
 
-`ls` 명령으로 `inhere` 디렉토리 내 파일 목록을 확인해보니 10개의 파일들을 확인할 수 있다.
+`ls` 명령으로 `inhere` 디렉토리 내 파일 목록을 확인해보니 10개의 파일들이 있다.
 ```shell
 bandit4@bandit:~/inhere$ ls
 -file00  -file02  -file04  -file06  -file08
