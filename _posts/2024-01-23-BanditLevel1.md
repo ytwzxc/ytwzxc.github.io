@@ -1,21 +1,42 @@
 ---
-title: "Bandit Level 0 → Level 1"
-date: 2024-01-23 13:23:00 +0800
+title: "Bandit Level 1 → Level 2"
+date: 2024-01-23
 categories: [Bandit]
 tags: [Bandit]
 ---
 
+## 문제
+<https://overthewire.org/wargames/bandit/bandit2.html>
+
 ## 목표
-다음 레벨의 패스워드는 홈 디렉토리에 위치한 readme 파일에 저장되어 있다.
+홈 디렉토리에 위치한 `-` 파일에 저장되어 있는 패스워드를 찾는다.
 
 ## 풀이
-cat readme 명령으로 readme 파일의 내용을 확인한다.
+`cat -` 명령을 시도해보니 파일의 내용은 보이지 않고 입력을 받아 다시 출력한다.
+
 ```shell
-bandit0@bandit:~$ cat readme
-NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+bandit1@bandit:~$ cat -
+a
+a
+asdf
+asdf
 ```
 
-**Password : NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL**
+`cat` 명령어는 파일 이름이 `-` 일 경우 표준 입력을 읽는다.
+
+그렇다면 다른 방법으로 `-` 파일을 읽어야 한다.  
+&nbsp;  
+
+파일 이름인 `-` 앞에 현재 디렉토리를 의미하는 `./`를 붙인다.
+
+```shell
+bandit1@bandit:~$ cat ./-
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+```  
+&nbsp;  
+
+**Password : rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi**
 
 ## 배운 것
-- cat 명령어로 파일의 내용을 확인할 수 있다.
+- `cat` 명령어는 파일 이름이 `-`일 경우 표준 입력을 읽는다.
+- `./` 는 현재 디렉토리를 의미한다.
