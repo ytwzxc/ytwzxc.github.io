@@ -9,7 +9,7 @@ tags: [Bandit]
 <https://overthewire.org/wargames/bandit/bandit10.html>
 
 ## 목표
-`data.txt` 파일에 저장된 사람이 읽을 수 있는 문자열 패스워드를 찾는다.  
+`data.txt` 파일에 저장된 사람이 읽을 수 있는 문자열인 패스워드를 찾는다.  
 > 패스워드의 앞에는 몇개의 `=` 문자가 붙는다.
 
 ## 풀이
