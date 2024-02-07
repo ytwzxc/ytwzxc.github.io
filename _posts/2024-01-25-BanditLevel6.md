@@ -9,7 +9,7 @@ tags: [Bandit]
 <https://overthewire.org/wargames/bandit/bandit7.html>
 
 ## 목표
-다음 조건을 따르는 서버 어딘가에 있는 파일에 저장되어 있는 패스워드를 찾는다.  
+다음 조건을 따르는 서버 어딘가에 저장되어 있는 패스워드를 찾는다.  
 - bandit7 유저가 소유한다.
 - bandit6 그룹이 소유한다.
 - 크기가 33 바이트다.
@@ -36,7 +36,7 @@ find: ‘/run/lock/lvm’: Permission denied
 &nbsp;  
 
 명령어 뒤에 `2>/dev/null`를 붙여 권한 거부 메시지들이 안 보이게 해준다.
-> '2>/dev/null'는 표준 에러 메시지를 `/dev/null`로 보낸다는 의미이다.
+> `2>/dev/null`은 표준 에러 메시지를 `/dev/null`로 보낸다는 의미이다.
 
 ```shell
 bandit6@bandit:~$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
@@ -57,5 +57,5 @@ z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 **Password : z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S**
 
 ## 배운 것
-- `find` 명령어에서 `-user`, `-group` 옵션을 사용해 파일을 찾을 수 있다.
+- `find` 명령어의 `-user`, `-group` 옵션을 사용해 파일을 찾을 수 있다.
 - `2>/dev/null`로 에러 메시지를 안 보이게 할 수 있다.
