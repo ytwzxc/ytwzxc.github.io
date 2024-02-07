@@ -6,7 +6,7 @@ tags: [Bandit]
 ---
 
 ## 문제
-<https://overthewire.org/wargames/bandit/bandit1.html>
+<https://overthewire.org/wargames/bandit/bandit5.html>
 
 ## 목표
 `inhere` 디렉토리에 위치한 **사람만 읽을 수 있는** 파일에 저장되어 있는 패스워드를 찾는다.

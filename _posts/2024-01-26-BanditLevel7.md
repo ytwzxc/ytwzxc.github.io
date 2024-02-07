@@ -6,7 +6,7 @@ tags: [Bandit]
 ---
 
 ## 문제
-<https://overthewire.org/wargames/bandit/bandit7.html>
+<https://overthewire.org/wargames/bandit/bandit8.html>
 
 ## 목표
 `data.txt` 파일 안 `millionth`라는 단어 옆에 저장되어 있는 패스워드를 찾는다.
@@ -17,7 +17,7 @@ tags: [Bandit]
 ```shell
 bandit7@bandit:~$ cat data.txt
 gallop  hu3ZhCrGRvfaO5jsY6ttvApzVCA2Hjvs
-Aurelia         ikl4F3cK5m6Cl6HAxva6zUAVJhI2Cvc6
+Aurelia's       ikl4F3cK5m6Cl6HAxva6zUAVJhI2Cvc6
 stoicism        JiW9ts44udf20bJHe8H5dS1c99Muwz42
 .
 .

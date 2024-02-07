@@ -1,0 +1,67 @@
+---
+title: "Bandit Level 9 → Level 10"
+date: 2024-01-27
+categories: [Bandit]
+tags: [Bandit]
+---
+
+## 문제
+<https://overthewire.org/wargames/bandit/bandit10.html>
+
+## 목표
+`data.txt` 파일에 저장된 사람이 읽을 수 있는 문자열 패스워드를 찾는다.  
+> 패스워드의 앞에는 몇개의 `=` 문자가 붙는다.
+
+## 풀이
+`cat data.txt` 명령으로 파일의 내용을 확인해보니 바이너리 파일인 것을 알 수 있다.
+
+> 바이너리(이진) 파일은 텍스트 파일이 아닌 컴퓨터 파일이다.
+
+```sh
+bandit9@bandit:~$ cat data.txt
+~▒Mk▒▒Axڋ▒▒k▒▒;▒Jb▒▒mi▒▒~▒]▒▒]㹩▒ux▒▒R~&▒▒▒4SA&l"▒▒▒▒x▒ٗ6m▒q▒▒▒bf▒▒s▒▒▒~n▒▒▒▒▒n▒▒▒▒
+▒▒~▒▒=▒|ڱ|J▒<▒▒=▒▒u▒▒ڷV▒▒▒1▒`▒;▒s▒▒g▒M-▒2k▒▒▒h▒(▒▒1▒o▒0;T▒}▒▒DE*'3▒i,▒▒▒x▒ʤ▒iSn3▒6E▒p:▒▒▒M▒▒▒O!▒d▒▒▒▒tW▒▒▒▒▒▒]▒▒]4&▒7▒FR^+▒6ư▒▒▒▒▒▒#
+.
+.
+.
+▒K▒▒▒▒▒▒.e▒▒y▒▒▒q'▒▒%N▒▒T▒▒,▒qFh31▒▒▒aXbۮ▒▒j▒q▒▒o▒▒wFU▒▒F▒=▒G▒▒)▒p▒▒▒F<▒N=▒gg0/▒▒j8\▒▒ ▒▒#qF~K▒▒y^▒▒?▒HeU▒    ▒6▒!▒▒f▒▒&▒x<A&▒▒gN▒j▒|▒
+▒▒lHZ▒y;u_    nN▒+▒<t▒맦▒%▒▒-nLo▒q▒
+```  
+
+&nbsp;  
+
+`strings data.txt` 명령으로 사람이 읽을 수 있는 문자열들을 추출한다.
+
+```sh
+bandit9@bandit:~$ strings data.txt
+4SA&l"
+FR^+
+3+2)`
+.
+.
+.
+#qF~
+x<A&
+y;u_    nN
+```  
+
+&nbsp;  
+
+`strings data.txt | grep '^==='` 명령으로 추출한 문자열 중 '==='로 시작하는 행을 출력한다.
+
+> `^`는 문자 표현식에서 문자열의 시작을 나타낸다.
+
+```sh
+bandit9@bandit:~$ strings data.txt | grep '^==='
+========== passwordk^
+========== is
+========== G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+```  
+
+&nbsp;  
+
+**Password : G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s**
+
+## 배운 것
+- `strings` 명령어로 바이너리 파일에서 문자열을 추출할 수 있다.
+- `^`는 문자 표현식에서 문자열의 시작을 나타낸다.

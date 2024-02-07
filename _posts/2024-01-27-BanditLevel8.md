@@ -6,7 +6,7 @@ tags: [Bandit]
 ---
 
 ## 문제
-<https://overthewire.org/wargames/bandit/bandit7.html>
+<https://overthewire.org/wargames/bandit/bandit9.html>
 
 ## 목표
 `data.txt` 저장되어 있는 한 줄만 나타나는 패스워드를 찾는다.
@@ -47,9 +47,10 @@ zwhYlyTRS3mNMsud9hapW5MDorCIGM0r
 
 &nbsp;  
 
+중복되지 않은 문자열을 찾으려면 
 `sort data.txt | uniq -u` 명령으로 정렬된 문자열들 중 중복되지 않은 문자열을 출력한다.
 
-> `|` (pipe)는 여러 명령어를 한 줄에서 연결시켜서 사용할 수 있게 해주는 명령어다.
+> `|` (pipe)는 여러 명령어를 한 라인에서 연결시켜서 사용할 수 있게 해주는 명령어다.
 
 ```sh
 bandit8@bandit:~$ sort data.txt | uniq -u
@@ -63,4 +64,4 @@ EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 ## 배운 것
 - `sort` 명령어로 파일의 내용을 정렬할 수 있다.
 - `uniq -u` 명령으로 중복되지 않은 문자열을 출력할 수 있다.
-- `|` 로 여러 명령어를 한 줄에서 연결시킬 수 있다.
+- `|` 로 여러 명령어를 한 라인에서 연결시킬 수 있다.
