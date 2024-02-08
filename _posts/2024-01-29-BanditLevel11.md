@@ -28,7 +28,7 @@ Gur cnffjbeq vf WIAOOSFzMjXXBC0KoSKBbJ8puQm5lIEi
 
 &nbsp;  
 
-`cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'` 명령으로 알파벳의 순서를 바꾼다.
+`cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'` 명령으로 알파벳의 순서를 바꿔서 출력한다.
 
 ```sh
 bandit11@bandit:~$ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
