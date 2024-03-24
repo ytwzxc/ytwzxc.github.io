@@ -1,6 +1,6 @@
 ---
 title: "리눅스 기본 명령어"
-date: 2024-01-01
+date: 2024-01-19
 categories: []
 tags: [Linux]
 ---
