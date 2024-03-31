@@ -1,3 +1,5 @@
+/*
+
 import babel from '@rollup/plugin-babel';
 import terser from '@rollup/plugin-terser';
 import license from 'rollup-plugin-license';
@@ -44,3 +46,5 @@ export default [
   build('post'),
   build('misc')
 ];
+
+*/
