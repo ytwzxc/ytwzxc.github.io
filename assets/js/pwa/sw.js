@@ -1,3 +1,9 @@
+---
+layout: compress
+permalink: '/sw.js'
+# PWA service worker
+---
+
 self.addEventListener("install", (event) => {
     self.skipWaiting();
   });
