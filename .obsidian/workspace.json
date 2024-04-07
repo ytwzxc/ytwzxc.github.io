@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "870163d81c91596a",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f0cbece1b1e48f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "289df6a83aad46c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-04-06-DHCS05.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d50edfcff21d5921",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f2de258f7d26d7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7fe65e5ba03ee7eb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse"
+              }
+            }
+          },
+          {
+            "id": "69fe7ec630537f75",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "763a9e8c3a8b03da",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d695cea68c0ec225",
+    "type": "split",
+    "children": [
+      {
+        "id": "6aa8f400e034a30f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c62edf341f10620",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2024-04-06-DHCS05.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5335fac57ed57fc4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2024-04-06-DHCS05.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cc7c64bfafc14ef6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "682828257a6c5a28",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2024-04-06-DHCS05.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "289df6a83aad46c4",
+  "lastOpenFiles": [
+    "_posts/2024-04-07.md",
+    "_posts/2024-04-06-DHCS05.md",
+    "_posts/2024-04-05-Linux01.md",
+    "_posts/2024-04-07-DHWG01.md",
+    "_posts/2024-01-19-LinuxCommands.md",
+    "README.md"
+  ]
+}
