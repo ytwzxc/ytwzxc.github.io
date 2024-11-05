@@ -20,7 +20,7 @@ title: 윤태우 # the main title
 
 tagline: 개발 & 보안 공부 일지 # it will display as the sub-title
 
-description: 개발 & 보안 공부 일지 # used by seo meta and the atom feed
+description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
